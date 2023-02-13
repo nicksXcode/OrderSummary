@@ -40,10 +40,10 @@ html {
 }
 
 body {
-	background-image: url('../images/pattern-background-mobile.svg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow-x: hidden;
+	background: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
 	font-family: var(--ff-redHatDisplay);
 }
 
@@ -173,20 +173,8 @@ button {
 
 /* Media Query  */
 @media (min-width: 768px) {
-	body {
-		background-position: bottom 200px left 0px;
-	}
 
-	body::before {
-		content: "";
-		background: hsla(225, 100%, 94%, 0.5);
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: -1;
-	}
+
 
 	.card__container {
 		min-width: 400px;
@@ -197,7 +185,7 @@ button {
 	}
 
 	.content__wrapper p {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		line-height: 2rem;
 	}
 
